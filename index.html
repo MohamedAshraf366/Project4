@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <TITle> Mohamed Ashraf</TITle>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/css.css">
+        <link rel="stylesheet" href="css/all.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm nav-container w-100 fixed-top ">
+            <div class="container-fluid">
+                <img src="images/logo.png" alt="Avatar Logo" style="width:70px;" class="rounded-pill nav-container-img">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item liMargin">
+                    <a class="nav-link text-white" href="javascript:void(0)">Hours & Location</a>
+                  </li>
+                  <li class="nav-item liMargin">
+                    <a class="nav-link text-white" href="javascript:void(0)">About</a>
+                  </li>
+                  <li class="nav-item liMargin">
+                    <a class="nav-link text-white" href="javascript:void(0)">Gallery</a>
+                  </li>
+                  <li class="nav-item liMargin">
+                    <a class="nav-link text-white" href="javascript:void(0)">Private Dining & Events</a>
+                  </li>
+                  <li class="nav-item dropdown liMargin" >
+                    <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#">Menue</a>
+                    <ul class="dropdown-menu  nav-li-color">
+                      <li><a class="dropdown-item" href="#">Pizza</a></li>
+                      <li><a class="dropdown-item" href="#">Burger</a></li>
+                      <li><a class="dropdown-item" href="#">Pasta</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex formMargin">
+                  <input class="form-control me-2" type="text" placeholder="Search">
+                  <button class="btn btn1 btn-color" type="button">Search</button>
+                
+                  <!-- Login Modal Trigger -->
+                  <button type="button" class="btn btn-color btn2" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Login
+                </button>
+                </form>
+                
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                  <div class="modal-dialog modal-fullscreen-sm-down">
+                    <div class="modal-content opacity-100">
+                
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                
+                      <!-- Modal Body -->
+                      <div class="modal-body">
+                        <form action="/action_page.php" class="was-validated">
+                          <div class="mb-3 mt-3">
+                            <label for="uname" class="form-label">Username:</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                          </div>
+                
+                          <div class="mb-3">
+                            <label for="pwd" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                          </div>
+                
+                          <div class="form-check form-switch mb-3">
+                            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+                            <label class="form-check-label" for="mySwitch">Remember Me</label>
+                          </div>
+                
+                          <!-- Submit and Close Buttons -->
+                          <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </nav>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<section class="slide-carousel">
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="images/burger1.jpg" alt="Los Angeles" class="d-block" style="width:100%; height : 70vh">
+      <div class="carousel-caption">
+        <h3>Burger</h3>
+        <p>Try our new, delicious, juicy burger</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="images/pasta1.jpg" alt="Chicago" class="d-block" style="width:100%; height : 70vh">
+      <div class="carousel-caption">
+        <h3>Pasta</h3>
+        <p>Love Pasta???!! Then you should try our pasta</p>
+      </div> 
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="images/pizza1.jpg" alt="Chicago" class="d-block" style="width:100%; height : 70vh">
+      <div class="carousel-caption">
+        <h3>Pizza</h3>
+        <p>Our pizza will make you forget everything horruble in your life</p>
+      </div> 
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="images/burger2.jpg" alt="Chicago" class="d-block" style="width:100%; height : 70vh">
+      <div class="carousel-caption">
+        <h3>Burger</h3>
+        <p>>Try our new, delicious, juicy burger</p>
+      </div> 
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="images/pasta2.jpg" alt="Chicago" class="d-block" style="width:100%; height : 70vh">
+      <div class="carousel-caption">
+        <h3>Pasta</h3>
+        <p>TLove Pasta???!! Then you should try our pasta</p>
+      </div> 
+    </div>  
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="images/pizza2.jpg" alt="New York" class="d-block" style="width:100%; height : 70vh">
+      <div class="carousel-caption">
+        <h3>Pizza</h3>
+        <p>Which one of our delicious pizza do you ove most</p>
+      </div>  
+    </div>
+  </div>
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</section> <!--slide-carousel-->
+ <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+ <section class="d-flex justify-content-end align-items-end flex-column mb-3 social-media">
+    <ul class="doctor-social">
+      <li><a href=""><img src="images/facebook.png" alt="" class="img-fluid social-media-color"></a></li>
+      <li><a href=""><img src="images/twitter.png" alt="" class="img-fluid social-media-color"></a></li>
+      <li><a href=""><img src="images/instagram.png" alt="" class="img-fluid social-media-color"></a></li>
+      <li><a href=""><img src="images/whatsapp.png" alt="" class="img-fluid social-media-color"></a></li>
+      <li><a href=""><img src="images/linkedin.png" alt="" class="img-fluid social-media-color"></a></li>
+    </ul>
+</section><!-- social-media -->
+ <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+ <section class="welcomemsg">
+  <div class="mt-4 p-5 text-white rounded welcomemsg-container">
+    <h2>Welcome</h2>
+    <p>Are you searching for delicious, cheep and available 24/7 resturant ?</p>
+    <p>Then you are in right placem come and visit our resturant ASAP</p>
+    <button type="button" class="btn btn-outline-light btn-lg text-dark border border-4 rounded-4 btn-welcomemsg">More Info</button>
+  </div><!--welcomemsg-container-->
+</section><!--welcomemsg-->
+ <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+<section class="popular">
+  <p class="popular-head">Popular food in our resturant</p>
+
+  <div class="container mt-3">
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header collapsed mousePointer" data-bs-toggle="collapse" href="#collapseOne">
+          <button type="" class="btn ">Pizza</button>
+        </div>
+        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+          <div class="card-body">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/pizza1.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">Our pizza will make you forget everything horruble in your life .</p>
+                    
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header collapsed mousePointer" data-bs-toggle="collapse" href="#collapseTwo">
+          <button type="" class="btn ">Burger</button>
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="images/burger1.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Burger</h5>
+                  <p class="card-text">Try our new, delicious, juicy burger.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header collapsed mousePointer" data-bs-toggle="collapse" href="#collapseThree">
+          <button type="" class="btn ">Pasta</button>
+        </div>
+        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="images/pasta1.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Pasta</h5>
+                  <p class="card-text">Love Pasta???!! Then you should try our pasta.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!--popular-->
+ <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+<section class="writeOrder">
+  <h2>Write Your Order</h2>
+  <div class="writeOrder-container">
+    <p><span> Write below</span> your order here</p>
+    <textarea id="comment" name="comment" rows="4" cols="100" placeholder="Youe order"></textarea><br>
+    <button type="button" class="btn btn-outline-light btn-lg text-dark border border-4 rounded-4 btn-writeOrder" 
+    data-bs-toggle="modal" data-bs-target="#myModalcopy" 
+          data-bs-toggle="tooltip" data-bs-placement="right" title="Click to submit your order">Order Now</button>
+  </button>
+    <div class="modal" id="myModalcopy">
+  <div class="modal-dialog">
+    <div class="modal-content">
+ <!-- Modal body -->
+      <div class="modal-body">
+        Thanks to order from us, Our chefs is working now on your order.
+        Enjoy
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  </div><!--writeOrder-container"-->
+</section><!--writeOrder-->
+ <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+ <section class="writeOrder">
+  <h2>Write Your Comment</h2>
+  <div class="writeOrder-container">
+    <p><span> Write below</span> your comment, and your experience with us</p>
+    <textarea id="comment" name="comment" rows="4" cols="100" placeholder="Write your comment"></textarea><br>
+    <button type="button" 
+    class="btn btn-outline-light btn-lg text-dark btn-light border border-4 rounded-4 btn-writeOrder" 
+    data-bs-toggle="modal" data-bs-target="#myModalcopy" 
+          data-bs-toggle="tooltip" data-bs-placement="right" 
+          title="Click to submit your comment">Submit your comment</button>
+  </button>
+    <div class="modal" id="myModalcopy">
+  <div class="modal-dialog">
+    <div class="modal-content">
+ <!-- Modal body -->
+      <div class="modal-body">
+        Thanks for your comment
+        Have a nice day
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div><!--writeOrder-container"-->
+</section><!--writeOrder-->
+ <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+<section class="backgroundimage1"></section><!--backgroundimage1-->
+ <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+<section class="popular-dish">
+  <h2>Popular Dishes in Our Resturant</h2>
+  <div class="container">
+    <div class="row">
+      <!--first card-->
+      <div class="col-lg-4 col-sm-12  pt-4 container-card">
+        <div class="card" >
+          <img class="card-img-top" src="images/cardPasta1.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Chicken Alfredo Pasta</h4>
+            <p class="card-text card-text-line-clamp2">Whether it is spaghetti meatballs, penne arrabbiata or chicken mushroom pasta, Pasta dishes are to melt in your mouth, accompanied by a blast of flavor.</p>
+            <a href="#" class="btn btn-outline-light text-dark btn-popular-dish border border-4 rounded-4">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <!--second card-->
+      <div class="col-lg-4 col-sm-12 pt-4 container-card">
+        <div class="card" >
+          <img class="card-img-top" src="images/cardburger1.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Steak Mushroom & Cheese Sandwich</h4>
+            <p class="card-text card-text-line-clamp">SCheer up your taste buds and tickle your appetite with one of our burgers. All our burgers are 100 %  beef with no fillers, no additives, no preservatives.</p>
+            <a href="#" class="btn btn-outline-light text-dark btn-popular-dish border border-4 rounded-4">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <!--third card-->
+      <div class="col-lg-4 col-sm-12  pt-4 container-card">
+        <div class="card" >
+          <img class="card-img-top" src="images/cardpizza1.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Salami, Red Onion and Oregano Pizza</h4>
+            <p class="card-text card-text-line-clamp">Deliciously simple and flavorful, this Salami, Red Onion and Oregano Pizza is sure to become a family favorite! Made with Tillamook® Mozzarella and Pepper Jack cheese.</p>
+            <a href="#" class="btn btn-outline-light text-dark btn-popular-dish border border-4 rounded-4">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <!--four card-->
+      <div class="col-lg-4 col-sm-12 pt-4 container-card">
+        <div class="card" >
+          <img class="card-img-top" src="images/cardPasta2.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Shrimp Pomodoro Pasta</h4>
+            <p class="card-text card-text-line-clamp2">Whether it is spaghetti meatballs, penne arrabbiata or chicken mushroom pasta, Pasta dishes are to melt in your mouth, accompanied by a blast of flavor.</p>
+            <a href="#" class="btn btn-outline-light text-dark btn-popular-dish border border-4 rounded-4">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <!--five card-->
+      <div class="col-lg-4 col-sm-12 pt-4 container-card">
+        <div class="card" >
+          <img class="card-img-top" src="images/cardburger2.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Crispy Comté Frico Cheeseburgers</h4>
+            <p class="card-text card-text-line-clamp">SCheer up your taste buds and tickle your appetite with one of our burgers. All our burgers are 100 %  beef with no fillers, no additives, no preservatives.</p>
+            <a href="#" class="btn btn-outline-light text-dark btn-popular-dish border border-4 rounded-4">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <!--six card-->
+      <div class="col-lg-4 col-sm-12 pt-4 container-card">
+        <div class="card" >
+          <img class="card-img-top" src="images/cardpizza2.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Sausage and Ricotta Pizza with Castelvetrano Olives</h4>
+            <p class="card-text card-text-line-clamp">The combination of the meaty, briny, vegetal flavors in this pizza hits so many satisfying notes that it is sure to be a hit at your table. The olives, peppers, sausage, and ricotta combine to bring sweet, savory, salty, and creamy notes to this pretty pizza. Bright green and meaty Castelvetrano olives offer a refreshing upgrade from the standard canned black olives served at many pizzerias, and mirror the Mediterranean seasoning in the crumbled Italian sausage generously topping this pizza.</p>
+            <a href="#" class="btn btn-outline-light text-dark btn-popular-dish border border-4 rounded-4">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div> <!--row-->
+  </div><!--container-->
+</section>
+<br><br><br>
+ <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+ <section class="backgroundimage2"></section><!--backgroundimage1-->
+ <br>
+ <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+<section class="thanks">
+  <div class="thanks-head">
+    <h2>Thanks For</h2>
+  </div><!--thanks-head-->
+  <div class="thanks-container  container">
+    <div class="row">
+        <!--firist-->
+      <div class="border border-0 card col-lg-4 col-sm-12 mt-4 card-imagee  ">
+        <img class="card-img-top" src="images/chef3.jpg" alt="Card image">
+        <div class="card-img-overlay">
+          <div class="car-overlay-container">
+            <h4 class="card-title">All Thanks and Appreciation</h4>
+            <h4 class="card-title">Main Chef</h4>
+            <p><i class="fa-regular fa-clock"></i><span> November 9, 2024</span></p>
+            <img class="img-fluid" src="images/chef3.jpg" alt="Card image">
+          </div><!--car-overlay-container-->
+        </div>
+      </div>
+      <!--second-->
+      <div class="border border-0 card col-lg-4 col-sm-12 mt-4 card-imagee">
+        <img class="card-img-top" src="images/chef1.jpg" alt="Card image">
+        <div class="card-img-overlay">
+          <div class="car-overlay-container">
+            <h4 class="card-title">All Thanks and Appreciation</h4>
+            <h4 class="card-title">CO-Assistant Main Chef</h4>
+            <p><i class="fa-regular fa-clock"></i><span> November 9, 2024</span></p>
+            <img class="img-fluid" src="images/chef1.jpg" alt="Card image">
+          </div><!--car-overlay-container-->
+        </div>
+      </div>
+      <!--Third-->
+      <div class="border border-0 card col-lg-4 col-sm-12 mt-4 card-imagee">
+        <img class="card-img-top" src="images/chef2.jpg" alt="Card image">
+        <div class="card-img-overlay">
+          <div class="car-overlay-container">
+            <h4 class="card-title">All Thanks and Appreciation</h4>
+            <h4 class="card-title">Our Crew</h4>
+            <p><i class="fa-regular fa-clock"></i><span> November 9, 2024</span></p>
+            <img class="img-fluid" src="images/chef2.jpg" alt="Card image">
+          </div><!--car-overlay-container-->
+        </div>
+      </div>
+    </div><!--row-->
+  </div><!--thanks-container  container-->
+</section><!--thanks-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+<section class="resturant-news">
+  <div class="resturant-news-head">
+    <h2>Our Resturant News</h2>
+  </div><!--resturant-news-head-->
+  <!--firist-->
+  <div class="resturant-news-container container">
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="resturant-news-image col-md-4 order-lg-2 order-sm-1">
+          <img src="images/news1.png" class="img-fluid rounded-start" alt="...">
+        </div><!--resturant-news-image-->
+        <div class="col-md-8 p-4 order-lg-1 order-sm-2">
+          <div class="card-body ord-sm-1">
+            <h4 class="card-title pb-2">beautiful table of italian pasta, pizza, burger and drinks. selective soft focus</h4>
+            <p><i class="fa-regular fa-calendar-days"></i><span> November 9, 2024</span></p>
+            <hr>
+            <p class="card-text mb-5 resturant-news-parag ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, accusantium nam quas quam vero perferendis praesentium, quaerat nisi commodi ea molestiae tempora amet nulla nesciunt aperiam tenetur, assumenda incidunt non.
+            Error eius minima tempora sequi, maiores labore voluptatibus, vel alias rem cupiditate magni. Quasi aut veniam modi quae eum ex inventore voluptatem quas pariatur at quaerat iusto id, molestiae laborum?</p>
+            <p class="card-text mt-5">
+              <a href="#" class="btn btn-outline-light text-dark border border-2 btn-sm  mt-2">
+                <i class="fa-solid fa-podcast"></i>Prodcast</a>
+              <a href="#" class="btn btn-outline-light text-dark border border-2 btn-sm  mt-2 ">
+                <i class="fa-regular fa-clock"></i>55 mins</a>
+              <a href="#" class="btn btn-outline-light text-dark border border-2 btn-sm  mt-2">
+                <i class="fa-solid fa-play"></i>Play Episode</a>
+            </p>
+          </div>
+        </div>
+        
+      </div>
+      </div>
+    </div><!--end of firist-->
+    
+    <!--second-->
+  <div class="resturant-news-container container">
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="resturant-news-image-left col-md-4">
+          <img src="images/news2.jpg" class="img-fluid rounded-start" alt="...">
+        </div><!--resturant-news-image-->
+        <div class="col-md-8 p-4 ">
+          <div class="card-body">
+            <h4 class="card-title pb-2">Creamy Fettuccine Avocado Pasta</h4>
+            <p><i class="fa-regular fa-calendar-days"></i><span> November 9, 2024</span></p>
+            <hr>
+            <p class="card-text mb-5 resturant-news-parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, accusantium nam quas quam vero perferendis praesentium, quaerat nisi commodi ea molestiae tempora amet nulla nesciunt aperiam tenetur, assumenda incidunt non.
+            Error eius minima tempora sequi, maiores labore voluptatibus, vel alias rem cupiditate magni. Quasi aut veniam modi quae eum ex inventore voluptatem quas pariatur at quaerat iusto id, molestiae laborum?</p>
+            <p class="card-text mt-5">
+              <a href="#" class="btn btn-outline-light text-dark btn-light border border-2 btn-sm  mt-2">
+                <i class="fa-solid fa-podcast"></i>Prodcast</a>
+              <a href="#" class="btn btn-outline-light text-dark btn-light border border-2 btn-sm  mt-2">
+                <i class="fa-regular fa-clock"></i>55 mins</a>
+              <a href="#" class="btn btn-outline-light text-dark btn-light border border-2 btn-sm  mt-2">
+                <i class="fa-solid fa-play"></i>Play Episode</a>
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    </div><!--end of second-->
+
+    <!--third-->
+    <div class="resturant-news-container container">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="resturant-news-image col-md-4 order-lg-2 order-sm-1">
+            <img src="images/news3.jpg" class="img-fluid rounded-start" alt="...">
+          </div><!--resturant-news-image-->
+          <div class="col-md-8 p-4 order-lg-1 order-sm-2">
+            <div class="card-body">
+              <h4 class="card-title pb-2">Creamy Avocado Spaghetti</h4>
+              <p><i class="fa-regular fa-calendar-days"></i><span> November 9, 2024</span></p>
+              <hr>
+              <p class="card-text mb-5 resturant-news-parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, accusantium nam quas quam vero perferendis praesentium, quaerat nisi commodi ea molestiae tempora amet nulla nesciunt aperiam tenetur, assumenda incidunt non.
+              Error eius minima tempora sequi, maiores labore voluptatibus, vel alias rem cupiditate magni. Quasi aut veniam modi quae eum ex inventore voluptatem quas pariatur at quaerat iusto id, molestiae laborum?</p>
+              <p class="card-text mt-5">
+                <a href="#" class="btn btn-outline-light text-dark btn-light border border-2 btn-sm  mt-2">
+                  <i class="fa-solid fa-podcast"></i>Prodcast</a>
+                <a href="#" class="btn btn-outline-light text-dark btn-light border border-2 btn-sm  mt-2">
+                  <i class="fa-regular fa-clock"></i>55 mins</a>
+                <a href="#" class="btn btn-outline-light text-dark btn-light border border-2 btn-sm  mt-2">
+                  <i class="fa-solid fa-play"></i>Play Episode</a>
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      </div><!--end of third-->
+      
+      <!--four-->
+    <div class="resturant-news-container container">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="resturant-news-image-left col-md-4">
+            <img src="images/news4.jpg" class="img-fluid rounded-start" alt="...">
+          </div><!--resturant-news-image-->
+          <div class="col-md-8 p-4">
+            <div class="card-body">
+              <h4 class="card-title pb-2">Pizza Burgers</h4>
+              <p><i class="fa-regular fa-calendar-days"></i><span> November 9, 2024</span></p>
+              <hr>
+              <p class="card-text mb-5 resturant-news-parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, accusantium nam quas quam vero perferendis praesentium, quaerat nisi commodi ea molestiae tempora amet nulla nesciunt aperiam tenetur, assumenda incidunt non.
+              Error eius minima tempora sequi, maiores labore voluptatibus, vel alias rem cupiditate magni. Quasi aut veniam modi quae eum ex inventore voluptatem quas pariatur at quaerat iusto id, molestiae laborum?</p>
+              <p class="card-text mt-5">
+                <a href="#" class="btn btn-outline-light text-dark btn-light border border-2 btn-sm  mt-2">
+                  <i class="fa-solid fa-podcast"></i>Prodcast</a>
+                <a href="#" class="btn btn-outline-light text-dark btn-light border border-2 btn-sm  mt-2">
+                  <i class="fa-regular fa-clock"></i>55 mins</a>
+                <a href="#" class="btn btn-outline-light text-dark btn-light border border-2 btn-sm  mt-2">
+                  <i class="fa-solid fa-play"></i>Play Episode</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div><!--end of four-->
+
+  </div><!--resturant-news-container-->
+</section><!--resturant-news-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+<section class="join">
+  <div class="join-head">
+    <h2>Join Us</h2>
+  </div><!--join-head-->
+  <div class="join-container container text-center">
+    <div class="row">
+      <!--firist-->
+      <div class="col-lg-3 col-sm-12 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Watch Video</h4>
+            <div class="image-container rounded w-50">
+              <img src="images/instagram.png" class="img-fluid mx-auto d-block join-image w-50" alt="instagram">
+            </div><!--image-container-->
+            <p class="card-text mt-3">Go To Link</p>
+          </div>
+        </div>
+      </div><!--end of firist-->
+
+      <!--second-->
+      <div class="col-lg-3 col-sm-12 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Follow</h4>
+            <div class="image-container rounded w-50">
+              <img src="images/facebook.png" class="img-fluid mx-auto d-block join-image w-50" alt="instagram">
+            </div><!--image-container-->
+            <p class="card-text mt-3">Go To Link</p>
+          </div>
+        </div>
+      </div><!--end of second-->
+
+      <!--third-->
+      <div class="col-lg-3 col-sm-12 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Like Our Page</h4>
+            <div class="image-container rounded w-50">
+              <img src="images/linkedin.png" class="img-fluid mx-auto d-block join-image w-50" alt="instagram">
+            </div><!--image-container-->
+            <p class="card-text mt-3">Go To Link</p>
+          </div>
+        </div>
+      </div><!--end of third-->
+
+      <!--fourth-->
+      <div class="col-lg-3 col-sm-12 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Contact Us</h4>
+            <div class="image-container rounded w-50">
+              <img src="images/whatsapp.png" class="img-fluid mx-auto d-block w-50 join-image" alt="instagram">
+            </div><!--image-container-->
+            <p class="card-text mt-3">Go To Link</p>
+          </div>
+        </div>
+      </div><!--end of fourth-->
+  </div><!--join-container-->
+</section><!--join-->
+ <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+ <footer>
+    <div class="container text-center mt-5">
+      <div class="row">
+          <!--firist-->
+          <div class="col-lg-4 col-sm-12 mb-3 mb-sm-0 ">
+            <div class="card text-white border border-0 ">
+              <div class="card-body">
+                <div class="card-body-head border-top border-bottom border-3 hover-black">
+                  <img src="images/logo.png" class="img-fluid rounded-circle w-25  mt-3 mb-3" alt="instagram">
+                  <span class="card-title">Good Company</span>
+               </div><!--card-body-head-->
+               <div class="card-bod-container ">
+                <p class="card-text mt-3 hover-black">Tel1 : 01111166832</p>
+                <p class="card-text mt-3 hover-black">Tel2 : 01551096474</p>
+                <p class="card-text mt-3 hover-black">Adress : Egypt, Sohag</p>
+               </div><!--card-bod-container-->
+              </div>
+            </div>
+          </div>
+          <!--end of firist-->
+      
+          <!--second-->
+          <div class="col-lg-4 col-sm-12 mb-3 mb-sm-0 ">
+            <div class="card text-dark border border-0">
+              <div class="card-body">
+                <div class="card-body-head border-top border-bottom border-3 hover-white">
+                  <img src="images/logo.png" class="img-fluid rounded-circle w-25  mt-3 mb-3" alt="instagram">
+                  <span class="card-title">Important Links</span>
+               </div><!--card-body-head-->
+               <div class="card-bod-container">
+                <p class="card-text mt-3 hover-white">Visit Us</p>
+                <p class="card-text mt-3 hover-white">Take a look</p>
+                <p class="card-text mt-3 hover-white">Your health is more important</p>
+               </div><!--card-bod-container-->
+              </div>
+            </div>
+          </div>
+            <!--end of second-->
+      
+      
+            <!--third-->
+            <div class="col-lg-4 col-sm-12 mb-3 mb-sm-0 ">
+              <div class="card text-white border border-0">
+                <div class="card-body">
+                  <div class="card-body-head  border-top border-bottom border-3 hover-black">
+                    <img src="images/logo.png" class="img-fluid rounded-circle w-25  mt-3 mb-3" alt="instagram">
+                    <span class="card-title ">Vision</span>
+                 </div><!--card-body-head-->
+                 <div class="card-bod-container">
+                  <p class="card-text mt-3 hover-black">Servisies for all</p>
+                  <p class="card-text mt-3 hover-black border-top border-bottom">Provide best services</p>
+                  <p class="card-text mt-3 hover-black">You will be better than before</p>
+                 </div><!--card-bod-container-->
+                </div>
+              </div>
+            </div>
+            <!--end of third-->
+      </div><!--row-->
+    <hr class="border border-dark border-2">
+      <p class="text-center text-copy-right">COPYRIGHT &copy; 2024 Mohamed Ashraf All Rights</p>
+    <hr class="border border-dark border-2">
+    <br> <br>
+</footer>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>   
+    </body>
+</html>

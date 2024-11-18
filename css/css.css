@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+.navbar{
+    background-color: rgba(133, 139, 110, 0.8)
+}
+.modal-backdrop.show{
+    z-index: -1;
+}
+.modal{
+    opacity: 1;
+}
+.navbar .nav-li-color{
+    background-color: #858b6e;
+}
+.navbar .container-fluid img{
+    margin: 0px 40px;
+} 
+.navbar .container-fluid .collapse .navbar-nav .liMargin{
+    margin: 0px 10px;
+}
+.navbar .container-fluid .collapse .formMargin .btn2{
+    margin: 0px 10px;
+}
+.navbar .container-fluid .collapse .formMargin .btn2{
+    margin: 0px 40px 0px 10px;
+}
+.navbar form .btn-color{
+    background-color: #D4A373;
+}
+.navbar form .btn-color:hover{
+    background-color: #FAEDCD
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+.slide-carousel .carousel .carousel-inner .carousel-item img{
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide-carousel .carousel .carousel-inner .carousel-item .carousel-caption {
+    font-size: 22px;
+    font-weight: bolder;
+    background-color: #ccd5ae56;
+    border-radius: 15px;
+}
+.slide-carousel .carousel .carousel-inner .carousel-item:hover .carousel-caption {
+        background-color: #ccd5ae8a;
+    } 
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+.social-media{
+    position: fixed; 
+    right: 20px; 
+    bottom: 120px; 
+    z-index: 4;
+} 
+.social-media ul li{
+    list-style: none;
+    font-size: 40px; 
+}
+.social-media .social-media-color{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    filter: sepia(260%) brightness(103%) contrast(81%);
+}
+.social-media .social-media-color:hover{
+    filter: sepia(0%) brightness(112%) contrast(98%);;
+    transform:scale(1.2);
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+.welcomemsg{
+    background-color:#e9dfcb ;
+    position: relative;
+    bottom: 24px;
+}
+.welcomemsg .welcomemsg-container{
+    font-size: 1.3em;
+}
+.welcomemsg .welcomemsg-container .btn-welcomemsg{
+    background-color:#D4A373;
+}
+.welcomemsg .welcomemsg-container .btn-welcomemsg:hover{
+    background-color:#FAEDCD;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+.popular .popular-head{
+    background-color: #c2b9a7;
+    position: relative;
+    bottom: 24px;
+    font-size: 43px;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 40px 0px;
+}
+.mousePointer:hover{
+    cursor: pointer;
+}
+.popular .container .card .card-header{
+    background-color:#D4A373;
+}
+.popular .container .card .card-header:hover{
+    background-color:#FAEDCD;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+.writeOrder{
+    position: relative;
+    top: 60px;
+}
+.writeOrder h2{
+    background-color: #c2b9a7;
+    font-size: 32px;
+    text-align: center;
+    padding: 20px 0px;
+    color: white;
+}
+.writeOrder .writeOrder-container{
+    background-color: #E9DFCB;
+    position: relative;
+    bottom: 8px;
+    padding: 20px;
+}
+.writeOrder .writeOrder-container p{
+    font-size:22px;
+    color: white;
+}
+.writeOrder .writeOrder-container span{
+    font-weight: bolder;
+    color: black;
+}
+.writeOrder .writeOrder-container .btn-writeOrder{
+    background-color:#D4A373;
+}
+.writeOrder .writeOrder-container .btn-writeOrder:hover{
+    background-color:#FAEDCD;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.backgroundimage1{
+    background-image: url(../images/back1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    z-index: -1;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.popular-dish h2{
+    background-color: #c2b9a7;
+    font-size: 32px;
+    text-align: center;
+    padding: 20px 0px;
+    color: white;
+}
+.card-text-line-clamp {
+      white-space: nowrap;
+      overflow: hidden; 
+      text-overflow: ellipsis; /* إضافة النقاط الثلاث (...) */
+}
+.card-text-line-clamp2 { 
+      display: -webkit-box; /* عرض النص في صندوق مرن */
+      -webkit-box-orient: vertical; /* تحديد اتجاه النص عمودي */
+      -webkit-line-clamp: 3; /* عدد الأسطر المراد عرضها */
+      line-height: 1.5em; /* ارتفاع كل سطر */
+      max-height: 3em; /* الحد الأقصى لارتفاع العنصر (عدد الأسطر × ارتفاع السطر) */
+      overflow: hidden; /* إخفاء النص الزائد */
+      text-overflow: ellipsis; /* إضافة النقاط الثلاث (...) */
+}
+.popular-dish .container .row .container-card .card:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:#ccd5aeb4;
+    opacity: 0.3;
+}
+.popular-dish .container .row .container-card .card:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 3s;
+}
+.popular-dish .container .row .container-card .card:before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    background-color:#ccd5aeb4;
+    opacity: 0.3;
+}
+.popular-dish .container .row .container-card .card:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 3s;
+}
+.popular-dish .container .row .container-card .card img{
+    width: 90%;
+    height: 250px;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.popular-dish .btn-popular-dish{
+    background-color:#D4A373;
+    position: relative;
+    z-index: 3;
+}
+.popular-dish .btn-popular-dish:hover{
+    background-color:#FAEDCD;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.backgroundimage2{
+    background-image: url(../images/back2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    z-index: -1;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.thanks .thanks-head{
+    background-color: #c2b9a7;
+}
+.thanks h2{
+    font-size: 52px;
+    font-weight: bolder;
+    text-align: center;
+    word-spacing: 20px;
+    letter-spacing: 10px;
+    padding: 20px 0px;
+    background: linear-gradient(to bottom, #7f5539, #947967, #b4846c);
+    -webkit-background-clip: text; /* لقص الخلفية للنص */
+    -webkit-text-fill-color: transparent;
+}
+.thanks .thanks-container .card-imagee img{
+    height: 400px;
+    width: 100%; 
+    padding: 0;
+    margin: 0;  
+    filter: sepia(174%) brightness(88%) contrast(77%);
+}
+.thanks .thanks-container .card-imagee .card-img-overlay
+{
+    color: white;
+}
+.thanks .thanks-container .card-imagee .card-img-overlay .car-overlay-container img{
+    position: absolute;
+    top: 242px;
+    width: 100px;
+    height: 135px;
+    border-radius: 50%;
+    filter: none;
+}
+.thanks .thanks-container .card-imagee:hover{
+    transform: scale(0.90);
+    transition: transform 1s ease;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.resturant-news .resturant-news-container .card{
+    box-shadow:  -5px 8px 8px 0 #C2B9A7, 6px -2px 20px 0 #C2B9A7;
+    border-radius: 10px;
+}
+.resturant-news .resturant-news-head h2{
+    font-size: 52px;
+    font-weight: bolder;
+    text-align: center;
+    word-spacing: 20px;
+    letter-spacing: 10px;
+    padding: 20px 0px;
+    background: linear-gradient(to bottom, #7f5539, #947967, #b4846c);
+    -webkit-background-clip: text; /* لقص الخلفية للنص */
+    -webkit-text-fill-color: transparent;
+}
+.resturant-news .resturant-news-container h4{
+    text-transform: capitalize;
+}
+.resturant-news .resturant-news-container .card-body hr{
+    width: 50px;
+    border: 2px solid #C2B9A7;
+    background-color: #C2B9A7;
+}
+.resturant-news .resturant-news-container:hover hr{
+    width: 180px;;
+    transition: all 2s ease;
+}
+.resturant-news .resturant-news-container .resturant-news-image img{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 19% 100%);
+    height: 100%;
+    width: 100%;
+    border-top-right-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+.resturant-news .resturant-news-container .card-body .card-text a{
+    background-color:#D4A373;
+}
+
+.resturant-news .resturant-news-container .card-body .card-text a:hover{
+    background-color:#FAEDCD;
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+
+.resturant-news .resturant-news-container .resturant-news-image-left img{
+    clip-path: polygon(0 0, 100% 0, 72% 100%, 0 100%);
+    height: 100%;
+    width: 100%;
+    border-top-left-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.join .join-container .card{
+    box-shadow:  -5px 8px 8px 0 #C2B9A7, 6px -2px 20px 0 #C2B9A7;
+}
+.join .join-head h2{
+    font-size: 52px;
+    font-weight: bolder;
+    text-align: center;
+    word-spacing: 20px;
+    letter-spacing: 10px;
+    padding: 20px 0px;
+    background: linear-gradient(to bottom, #7f5539, #947967, #b4846c);
+    -webkit-background-clip: text; /* لقص الخلفية للنص */
+    -webkit-text-fill-color: transparent;
+}
+.join .join-container .image-container {
+   margin: auto;
+}
+.join .join-container .image-container .join-image{
+    border-radius: 40px;
+    box-shadow:  -5px 8px 8px 0 #C2B9A7, 6px -2px 20px 0 #C2B9A7;
+    display: inline-block;
+    overflow: hidden; /* لإزالة أي حواف زائدة */
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+footer{
+    background-color: #C2B9A7
+}
+footer .card{
+    background-color: transparent;
+}
+footer .card-body-head img{
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3), 0 -10px 22px rgba(0, 0, 0, 0.3);
+}
+footer .card-body-head span{
+    font-weight: bolder;
+}
+footer .hover-black:hover{
+    color: black;
+}
+footer .hover-white:hover{
+    color: white;
+}
+footer .text-copy-right{
+    font-size: 25px;
+    font-weight: bolder;
+    background: linear-gradient(to bottom, #7f5539, #947967, #b4846c);
+    -webkit-background-clip: text; /* لقص الخلفية للنص */
+    -webkit-text-fill-color: transparent;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (max-width : 576px){
+    .nav-container .nav-container-img{
+        width: 0.5em
+    }
+    /* .modal-small-screen{
+        position: relative;
+        z-index: 12221;
+    } */
+    textarea {
+        font-size: 18px;
+        width: 250px;
+        height: 200px;
+      }
+      footer .text-copy-right{
+        font-size: 0.90em;
+      }
+      .thanks h2, .join .join-head h2, .resturant-news .resturant-news-head h2{
+        letter-spacing: 2px;
+        word-spacing: 4px;
+      }
+      .resturant-news .resturant-news-container .resturant-news-image img,
+      .resturant-news .resturant-news-container .resturant-news-image-left img
+      {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      } 
+      .resturant-news .resturant-news-container .card-body p a{
+        display: block;
+        margin-top: 0px;
+      }
+    .resturant-news .resturant-news-container .resturant-news-parag{
+            overflow: hidden;
+            display: block;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5; /* عرض 5 أسطر فقط */
+            line-clamp: 5; /* في CSS الحديثة */
+        }
+        .social-media{
+            right: 0px;  
+        } 
+        .social-media .social-media-color{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+        .social-media ul li{
+            font-size: 30px; 
+        }
+}
